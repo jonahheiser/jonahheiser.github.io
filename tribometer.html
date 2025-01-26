@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>ASML Tribometer</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="1">
+		<h1 id="logo" class="text-center">
+			<span class="title">Jonah Heiser</span>
+			<span class="tagline">Yale MENG 2025<br>
+				<a href="">j.heiser@yale.edu</a></span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Work <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="Charging.html">Solar Charging Station</a></li>
+							<li><a href="crusher.html">Rock Crusher</a></li>
+							<li><a href="Orrery.html">Orrery</a></li>
+							<li><a href="engine.html">Stirling Engine</a></li>
+							<li><a href="fotomontage.html">Fotomontage</a></li>
+							<li><a href="small.html">Small Projects</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="about.html">About Me</a></li>
+					<li><a href="single.html">Contact</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">ASML Tribometer</h1>
+				</header>
+
+				<p><video width="900"src="assets/images/prototype.mov" alt=""autoplay loop muted></p>
+
+				<p>For my senior Capstone design project, my team and I have been working with industry client ASML to create a tribimoter (wear tester) to measure and characterize wear between two flat surfaces at the nanoscale. ASML is a company that manufactures high-precision photolithography systems, used in manufacturing semiconductors. When their machines wear down due to the friction of moving chips, they need downtime to be repaired. We were tasked with building a tribometer that can characterize this wear as to better predict the life cycle of these moving parts, and schedule preventative maintence instead of waiting for the machines to break (costly!).</p>
+				<p><img src="assets/images/cad.png" alt=""></p>
+				<h3>Concept</h3>
+				<p>Our tribometer consists of three main systems. The first is a vibration-isolated DC motor that drives our rotating stage via a timing belt and a shaft constrained by bearings. The samples are fixed to the top of the rotating stage, and the motor allows us to spin this sample at various speeds and accelerations.</p>
+				<p><img src="assets/images/motor.png" alt=""></p>
+				<p>The second system is a force controlled linear actuator mounted to a linear stage, which sits on our main steel shaft. The linear stage allows us to move the linear actuator up and down via a micrometer to rest at the perfect height above the sample. The actuator allows us to apply specific forces to our sample through a flat ceramic pin. This pin is offset from the center of the rotating stage, creating a circular wear track. </p>
+				<p><img src="assets/images/actuator.png" alt=""></p>
+				<p>The final system is our sensing system. The main measurements we are taking are through a capacitive sensor, that has a 500 micron range and a 40 nanometer resolution. We also are using a laser sensor as a course distance measurement, to allow us to set up our system so that the measurements are to be taken right in the middle of the capacitive sensor's operating range.</p>
+				<p><img src="assets/images/sensors.png" alt=""></p>
+				<blockquote>We are running all of these systems simultaneously through LabVIEW. See above for a video of our working prototype, and below for the data collected! Going forward, we are working on increasing the precision of the system, reducing the noise, and start characterizing DLC (diamond-like carbon) silicon wafers, with and without third body particles.</blockquote>
+				<p><img src="assets/images/datatrib.png" alt=""></p>
+
+
+			</article>
+			<!-- /Article -->
+
+
+			
+		</div>
+	</div>	<!-- /container -->
+	
+</main>
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+1 (203) 589-7905<br>
+						<a href="mailto:#">j.heiser@yale.edu</a><br>
+						<br>
+						
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title"></h3>
+				<div class="widget-body">
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-3 widget">
+				<h3 class="widget-title"></h3>
+				<div class="widget-body">
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-3 widget" style="text-align: right;">
+				<h3 class="widget-title">Jonah Heiser</h3>
+				<div class="widget-body">
+					Copyright &copy; 2023, Jonah Heiser<br> 
+					Design: <a href="https://www.gettemplate.com" rel="designer">Initio</a> </p>				</div>
+			</div>
+
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
